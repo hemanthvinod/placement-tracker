@@ -1,4 +1,4 @@
-import { Component, OnInit,ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnInit,ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import{ BreakpointObserver } from '@angular/cdk/layout';
 
@@ -7,14 +7,15 @@ import{ BreakpointObserver } from '@angular/cdk/layout';
   templateUrl: './adminhome.component.html',
   styleUrls: ['./adminhome.component.css']
 })
-export class AdminhomeComponent implements OnInit {
+export class AdminhomeComponent implements AfterViewInit,OnInit {
 
   @ViewChild(MatSidenav)
   sidenav!:MatSidenav;
   
-  constructor(private observer:BreakpointObserver) { }
+  constructor(private observer:BreakpointObserver, private changed:ChangeDetectorRef) { }
 
   ngOnInit(): void {
+    
   }
 
   ngAfterViewInit(){
@@ -28,6 +29,7 @@ export class AdminhomeComponent implements OnInit {
         this.sidenav.open();
       }
     });
+    this.changed.detectChanges();
   }
 
 }
