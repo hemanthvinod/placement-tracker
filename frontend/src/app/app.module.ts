@@ -15,6 +15,9 @@ import { StudentsListComponent } from './pages/admin/students-list/students-list
 import { VacanciesComponent } from './pages/admin/vacancies/vacancies.component';
 import { VacancyMatchingComponent } from './pages/admin/vacancy-matching/vacancy-matching.component';
 import { AdminheaderComponent } from './pages/admin/adminheader/adminheader.component';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { AdminheaderComponent } from './pages/admin/adminheader/adminheader.comp
     StudentsListComponent,
     VacanciesComponent,
     VacancyMatchingComponent,
-    AdminheaderComponent
+    AdminheaderComponent,
+    HeaderComponent,
+    FooterComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
