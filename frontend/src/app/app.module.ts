@@ -18,6 +18,7 @@ import { AdminheaderComponent } from './pages/admin/adminheader/adminheader.comp
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { EmployerSignupComponent } from './employer/employer-signup/employer-signup.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     AdminheaderComponent,
     HeaderComponent,
     FooterComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    EmployerSignupComponent
   ],
   imports: [
     BrowserModule,
