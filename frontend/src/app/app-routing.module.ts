@@ -9,7 +9,7 @@ import { VacanciesComponent } from './pages/admin/vacancies/vacancies.component'
 import { VacancyMatchingComponent } from './pages/admin/vacancy-matching/vacancy-matching.component';
 
 const routes: Routes = [
-  { path: '', component: EmployerSignupComponent },
+  { path: '', component: LandingPageComponent },
   { path: 'adminhome', component: AdminhomeComponent },
   { path: 'students', component: StudentsListComponent },
   { path: 'employers', component: EmployerListComponent },
