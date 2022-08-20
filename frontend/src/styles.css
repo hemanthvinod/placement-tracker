@@ -599,6 +599,7 @@ a {
 }
 
 /* Footer */
+
 /* Employer Signup */
 
 .employer-main {
@@ -607,21 +608,29 @@ a {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  /* background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 119, 182, 0.6)
+  ); */
 }
 
 .employer-main .employer-card {
   width: 500px;
   height: 650px;
-  background-color: var(--main-color--);
+  background-color: var(--text-color--);
   border-radius: 10px;
-  box-shadow: 4px 4px 10px black;
+  box-shadow: 1px 1px 5px black;
 }
 .employer-card .employer-head {
   font-size: 2rem;
   text-align: center;
   color: var(--text-color--);
   padding: 2rem 0;
-  text-shadow: 1px 1px 7px black;
+  text-shadow: 1px 1px 5px black;
+  background-color: var(--main-color--);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .employer-details {
   display: flex;
@@ -636,33 +645,33 @@ a {
 }
 .employer-group label {
   font-family: "Ubuntu" sans-serif;
-  color: var(--text-color--);
+  color: var(--main-color--);
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
 }
 .employer-group input {
-  border-radius: 5px;
+  border-radius: 3px;
   border: none;
   font-size: 1.4rem;
-  box-shadow: 1px 1px 7px black;
+  box-shadow: 1px 1px 5px black;
   outline: none;
-  color: var(--main-color--);
+  color: black;
 }
 .employer-btn {
   font-family: inherit;
   font-size: 1.2rem;
-  color: var(--main-color--);
-  background-color: var(--text-color--);
+  color: var(--text-color--);
+  background-color: var(--main-color--);
   border-radius: 10px;
-  border: 1px solid var(--text-color--);
+  border: 1px solid var(--main-color--);
   padding: 0.4rem 0.4rem;
   margin-top: 1rem;
   cursor: pointer;
-  box-shadow: 1px 1px 7px black;
+  box-shadow: 1px 1px 5px black;
 }
 .employer-btn:hover {
-  color: var(--text-color--);
-  background-color: var(--main-color--);
+  color: var(--main-color--);
+  background-color: var(--text-color--);
 }
 @media (max-width: 768px) {
   .employer-main .employer-card {
@@ -691,3 +700,6 @@ a {
   }
 }
 /* Employer Signup */
+/* Scroll bar */
+
+/* Scroll bar */
